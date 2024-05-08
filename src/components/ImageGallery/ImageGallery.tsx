@@ -16,7 +16,6 @@ const ImageGallery:FC<ImageGalleryProps> = ({ photos, openModal,lastImageRef }) 
                 const isLastImage:boolean = index === photos.length - 1;
                 return (
           <li className={css.gallery_item} key={photo.id} ref={isLastImage ? lastImageRef : null}>
-            {/* <ImageCard url={photo.urls.small} description={photo.alt_description} urlModal={photo.urls.regular} openModal={openModal} /> */}
           <ImageCard photo={photo} openModal={openModal} />
           </li>
         );

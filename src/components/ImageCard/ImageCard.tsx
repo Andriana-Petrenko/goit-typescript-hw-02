@@ -1,6 +1,6 @@
 import css from "./ImageCard.module.css"
 import { Photo } from "../../types"
-import { FC, LegacyRef } from "react";
+import { FC} from "react";
 
 interface ImageCardProps {
   photo: Photo;
